@@ -4,3 +4,82 @@
   padding: 2rem;
   text-align: center;
 }
+
+.App {
+  font-family: 'Arial', sans-serif;
+}
+
+.AllMenu {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 15px 32px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.ButtonImg {
+  width: 70px;
+}
+
+.OrderDetails, .AddItems {
+  width: 50%;
+  height: 500px;
+  border: 2px solid black;
+  padding: 20px 0;
+}
+
+.AddItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.OrderItem, .MenuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.OrderItem {
+  margin: 10px 0;
+  padding: 3px 10px;
+}
+
+.MenuItem {
+  cursor: pointer;
+  width: 230px;
+  height: 100px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.MenuItem:hover {
+  background-color: aquamarine;
+}
+
+.MenuItem:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.TotalPrice {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}

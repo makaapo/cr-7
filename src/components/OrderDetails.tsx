@@ -15,7 +15,7 @@ const OrderDetails: React.FC<Props> = ({order, DeleteItem}) => {
   return (
     <div className="OrderDetails">
       {order.map((item, index) => (
-        <OrderItem key={index} item={item} onDelete={() => DeleteItem(item.name)} />
+        <OrderItem key={index} item={item} onDelete={() => DeleteItem(item.name)}/>
       ))}
     </div>
   );
